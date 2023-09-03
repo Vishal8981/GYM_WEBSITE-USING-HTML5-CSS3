@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishal Fitness Gym</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* css reset */
+    body {
+        margin: 0;
+        padding: 0;
+        background: url('img/bg.png.jpg');
+        /* height: 4555px; */
+        color: white;
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        left: 44px;
+        top: 20px;
+        /* border: 2px solid red; */
+    }
+
+    .left img {
+        width: 136px;
+    }
+
+    .left div {
+        line-height: 20px;
+        text-align: center;
+        font-size: 26px;
+    }
+
+    .mid {
+        display: block;
+        width: 33%;
+        margin: 20px auto;
+        /* border: 2px solid red; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: aliceblue;
+        text-decoration: none;
+        margin: auto 4px;
+        font-size: 18px;
+        padding: 0px 10px;
+    }
+
+    .navbar li a:hover,.navbar li a.active {
+        color: rgb(128, 129, 129);
+        text-decoration: underline;
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        right: 24px;
+        top: 32px;
+        /* border: 2px solid red; */
+    }
+
+    .btn {
+        color: white;
+        background-color: black;
+        padding: 6px 10px;
+        margin: 0px 10px;
+        border: 4px solid rgb(0, 68, 255);
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: grey;
+    }
+
+    .container {
+        /* border: 2px solid green; */
+        /* border-radius: 30px; */
+        margin: 239px 172px;
+        padding: 14px 88px;
+        width: 33%;
+    }
+
+    .form-group input {
+        text-align: center;
+        border: 2px solid black;
+        padding: 3px 5px;
+        margin: 11px 58px;
+        width: 318px;
+        border-radius: 10px;
+        font-size: 25px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/gym.png.jpg" alt="">
+            <div>Vishal Fitness</div>
+        </div>
+
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="">AboutUs</a></li>
+                <li><a href="">FitnessCalculator</a></li>
+                <li><a href="">ContactUs</a></li>
+            </ul>
+        </div>
+
+        <!-- right box for button -->
+        <div class="right">
+            <button class="btn">CALL US NOW</button>
+            <button class="btn">EMAIL US</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of kolkata</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
